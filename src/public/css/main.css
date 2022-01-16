@@ -15,19 +15,6 @@ body {
 
 /* imagenes del banner */
 
-#contenedor_carousel {
-    height: 100vh;
-}
-
-#contenedor_carousel > div {
-    width: 100%;
-    max-width: 900px;
-    max-height: 450px;
-    min-height: 450px;
-    overflow: hidden;
-    position: relative;
-    display: grid;
-}
 #carouselExampleFade, #carouselExampleFade .carousel-inner {
     height: 100%;
 }
@@ -38,6 +25,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
 }
+
 #carouselExampleFade .carousel-inner .carousel-item {
     background-size: cover;
     background-attachment: fixed;
