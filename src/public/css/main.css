@@ -15,3 +15,24 @@ body {
     font-size: 30px;
     margin-bottom: 20px;
 }
+
+/* imagenes del banner */
+
+#carouselExampleFade .carousel-inner .carousel-item {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+}
+
+#carouselExampleFade .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(../img/carousel1.jpg);
+}
+
+#carouselExampleFade .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(../img/carousel2.jpg);
+}
+
+#carouselExampleFade .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(../img/carousel3.jpg);
+}
