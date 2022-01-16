@@ -1,9 +1,6 @@
 body {
 
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #141414;  /* fallback for old browsers */
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -18,16 +15,39 @@ body {
 
 /* imagenes del banner */
 
+#contenedor_carousel {
+    height: 100vh;
+}
+
+#contenedor_carousel > div {
+    width: 100%;
+    max-width: 900px;
+    max-height: 450px;
+    min-height: 450px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+}
+#carouselExampleFade, #carouselExampleFade .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleFade .carousel-inner .carousel-item:nth-child(1) {
+    background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(../img/carousel4.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
 #carouselExampleFade .carousel-inner .carousel-item {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#carouselExampleFade .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(../img/carousel1.jpg);
-}
 
 #carouselExampleFade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(../img/carousel2.jpg);
