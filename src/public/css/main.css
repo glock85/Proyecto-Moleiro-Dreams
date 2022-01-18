@@ -1,10 +1,29 @@
+* {
+    font-family: Helvetica;
+}
+
 body {
 
     background: #141414;  /* fallback for old browsers */
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica;
     color: white;
 }
 
+.pagContact{
+    background: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 50%)), url(../img/background1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+.pgAbout{
+    background: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 50%)), url(../img/background3.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
 
 .social p {
     color: #FCF7FF;
@@ -43,4 +62,40 @@ body {
 
 #carouselExampleFade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(../img/carousel3.jpg);
+}
+
+
+
+/* formulario */
+
+.formulario {
+
+    margin-top: 100px;
+}
+
+#contactForm {
+    width: 100%;
+    max-width: 700px;
+}
+
+.pagContact h1 {
+    text-shadow: 0 0 55px #fff;
+    border-bottom: 3px solid #006064;
+    padding: 20px;
+    margin: 30px;
+}
+
+
+@media (max-width: 991px) {
+    .pagContact #navbarNav ul {
+        background: rgba(20, 20, 20, 0.973)
+        
+        
+    }
+    .pagContact #navbarNav ul li a{
+        color: #FCF7FF;
+        text-shadow: 0 0 30px #fff;
+        justify-content: center;
+        text-align: center;
+    }
 }

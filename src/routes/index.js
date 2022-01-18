@@ -6,9 +6,18 @@ router.get('/', (req, res) => {
     res.render('index.html');
 });
 
-router.get('/contact', (req, res) => {
-    res.render('contact.html', {title: 'Contact Page'} );
+router.get('/about', (req, res) => {
+    res.render('about.html');
 });
+
+router.get('/portfolio', (req, res) => {
+    res.render('portfolio.html');
+});
+
+router.get('/contact', (req, res) => {
+    res.render('contact.html');
+});
+
 
 //Exportando rutas
 module.exports = router;
