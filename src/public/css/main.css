@@ -68,34 +68,45 @@ body {
 
 /* formulario */
 
-.formulario {
-
-    margin-top: 100px;
-}
-
 #contactForm {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .pagContact h1 {
     text-shadow: 0 0 55px #fff;
     border-bottom: 3px solid #006064;
-    padding: 20px;
-    margin: 30px;
 }
 
 
 @media (max-width: 991px) {
-    .pagContact #navbarNav ul {
-        background: rgba(20, 20, 20, 0.973)
-        
-        
-    }
-    .pagContact #navbarNav ul li a{
-        color: #FCF7FF;
-        text-shadow: 0 0 30px #fff;
-        justify-content: center;
+    #navbarNav ul li a{
         text-align: center;
     }
+}
+
+body.opaco {
+    overflow: hidden;
+}
+body.opaco::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0 0 0 / 97%);
+    z-index: 1040;
+}
+
+body.opaco nav {
+    z-index: 1050;
+}
+
+footer a{
+    transition: all ease .25s;
+}
+
+footer a:hover{
+    color: #fff !important;
 }

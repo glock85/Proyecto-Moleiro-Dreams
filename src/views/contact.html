@@ -15,34 +15,36 @@
 
     <!-- FORMULARIO DE CONTACTO -->
 
-        <div class="container d-flex justify-content-center align-items-center formulario animate__animated animate__flipInY">
-
-            <form id="contactForm">
-
-                <h1 class="d-flex justify-content-center align-items-center">Contact</h1>
+        <main>
+          <div class="container d-flex justify-content-center align-items-center formulario animate__animated animate__flipInY" style="padding: 80px 0; overflow: hidden;">
           
-              <div class="mb-3">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" />
-              </div>
+              <form id="contactForm">
           
-              <div class="mb-3">
-                <label class="form-label" for="emailAddress">Email Address</label>
-                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-              </div>
-          
-              <div class="mb-3">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-              </div>
-          
-              <div class="d-grid">
-                <button class="btn btn-lg " style="background-color: #006064; color: #F2F2F2;" type="submit">Submit</button>
-              </div>
-          
-            </form>
-          
+                  <h1 class="d-flex justify-content-center align-items-center">Contact</h1>
+            
+                <div class="mb-2">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" />
+                </div>
+            
+                <div class="mb-2">
+                  <label class="form-label" for="emailAddress">Email Address</label>
+                  <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                </div>
+            
+                <div class="mb-2">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem; resize: none;"></textarea>
+                </div>
+            
+                <div class="d-grid">
+                  <button class="btn btn-lg " style="background-color: #006064; color: #F2F2F2;" type="submit">Submit</button>
+                </div>
+            
+              </form>
+            
           </div>
+        </main>
 
 
 
@@ -56,6 +58,13 @@
     <!-- FOOTER -->
 
     <%- include ('partials/footer.html')%>
+
+    <!-- $("#menu-admin a").each(function(indice,elemento){
+      let hash = $(location).attr('pathname');
+      let href = $(this).attr("href")
+      
+      if(href == hash) $(this).addClass("active");
+  }) -->
 
 
 
