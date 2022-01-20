@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+//Creando Rutas
 
 router.get('/', (req, res) => {
     res.render('index.html');
@@ -17,7 +18,6 @@ router.get('/portfolio', (req, res) => {
 router.get('/contact', (req, res) => {
     res.render('contact.html');
 });
-
 
 //Exportando rutas
 module.exports = router;

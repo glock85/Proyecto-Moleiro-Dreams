@@ -7,18 +7,157 @@
     <title>Dreams</title>
     <%- include ('partials/head.html')%>
 </head>
-<body>
+<body class="pagPortfolio">
     
     <!-- NAVEGACION -->
   
     <%- include ('partials/navigation.html')%>
 
+    <main id="mainPorfolio" style="margin-top: 80px;">
 
+        <div class="container d-flex justify-content-center align-items-center">
 
+            <!-- BOTONES ACORDEON -->
+
+            <section class="buttons d-grid gap-2 d-md-block">
+
+                <button id="buttonOneClick" type="button" class="btn ov-btn-grow-ellipse">PRUEBA 1</button>
+                <button id="buttonTwoClick" type="button" class="btn ov-btn-grow-ellipse">PRUEBA 2</button>
+                <button id="buttonThreeClick" type="button" class="btn ov-btn-grow-ellipse">PRUEBA 3</button>
+                <button id="buttonFourClick" type="button" class="btn ov-btn-grow-ellipse">PRUEBA 4</button>
+
+            </section>
+
+        </div>
+
+        <!-- CARROUSEL ONE -->
+
+        <section class="carrouselOne mt-3">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="height: 100%;" >
+
+                  <div class="carousel-item active">
+                    <img src="img/carousel5.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel6.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel7.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+
+            </div>
+    
+        </section>
+
+        <!-- CARROUSEL TWO -->
+
+        <section class="carrouselTwo mt-3">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="height: 100%;" >
+
+                  <div class="carousel-item active">
+                    <img src="img/carousel5.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel6.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel7.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+
+            </div>
+    
+        </section>
+
+        <!-- CARROUSEL THREE -->
+
+        <section class="carrouselThree mt-3">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="height: 100%;" >
+
+                  <div class="carousel-item active">
+                    <img src="img/carousel5.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel6.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel7.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+
+            </div>
+    
+        </section>
+
+        <!-- CARROUSEL FOUR -->
+
+        <section class="carrouselFour mt-3">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="height: 100%;" >
+
+                  <div class="carousel-item active">
+                    <img src="img/carousel5.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel6.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/carousel7.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+
+            </div>
+    
+        </section>
+
+    </main> 
 
     <!-- FOOTER + SOCIAL -->
 
     <%- include ('partials/footer.html')%>
+
+
+</main> 
 
 </body>
 </html>

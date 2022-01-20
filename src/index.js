@@ -9,14 +9,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
-
-
-// Middlewares
-
 //Importando Rutas
 
 app.use(require('./routes/index.js'));
-
 
 // Archivos Estaticos
 

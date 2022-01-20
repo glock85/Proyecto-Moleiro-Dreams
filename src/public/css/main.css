@@ -1,13 +1,18 @@
-* {
-    font-family: Helvetica;
-}
+/* EFECTOS GENERALES */
 
 body {
 
-    background: #141414;  /* fallback for old browsers */
+    background: #141414; 
     font-family: Helvetica;
     color: white;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    transition: all ease 0.5s;
+}
+
+/* BACKGROUND DE LAS PAGINAS CONTACT Y ABOUT */
 
 .pagContact{
     background: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 50%)), url(../img/background1.jpeg);
@@ -25,27 +30,20 @@ body {
 
 }
 
-.social p {
-    color: #FCF7FF;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
+/* IMAGENES DEL BANNER HOME */
 
-/* imagenes del banner */
-
-#carouselExampleFade, #carouselExampleFade .carousel-inner {
+.pagHome #carouselExampleFade, #carouselExampleFade .carousel-inner {
     height: 100%;
 }
 
-#carouselExampleFade .carousel-inner .carousel-item:nth-child(1) {
+.pagHome #carouselExampleFade .carousel-inner .carousel-item:nth-child(1) {
     background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(../img/carousel4.jpg); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 }
 
-#carouselExampleFade .carousel-inner .carousel-item {
+.pagHome #carouselExampleFade .carousel-inner .carousel-item {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -55,18 +53,15 @@ body {
     align-items: center;
 }
 
-
-#carouselExampleFade .carousel-inner .carousel-item:nth-child(2) {
+.pagHome #carouselExampleFade .carousel-inner .carousel-item:nth-child(2) {
     background-image: url(../img/carousel2.jpg);
 }
 
-#carouselExampleFade .carousel-inner .carousel-item:nth-child(3) {
+.pagHome #carouselExampleFade .carousel-inner .carousel-item:nth-child(3) {
     background-image: url(../img/carousel3.jpg);
 }
 
-
-
-/* formulario */
+/* FORMULARIO DE CONTACT  */
 
 #contactForm {
     width: 100%;
@@ -74,10 +69,11 @@ body {
 }
 
 .pagContact h1 {
-    text-shadow: 0 0 55px #fff;
+    text-shadow: 0 0 20px #fff;
     border-bottom: 3px solid #006064;
 }
 
+/* EFECTOS DEL MENU RESPONSIVE */
 
 @media (max-width: 991px) {
     #navbarNav ul li a{
@@ -88,6 +84,7 @@ body {
 body.opaco {
     overflow: hidden;
 }
+
 body.opaco::before {
     content: "";
     position: fixed;
@@ -103,6 +100,8 @@ body.opaco nav {
     z-index: 1050;
 }
 
+/* FOOTER + SOCIAL */
+
 footer a{
     transition: all ease .25s;
 }
@@ -110,3 +109,53 @@ footer a{
 footer a:hover{
     color: #fff !important;
 }
+
+/* PRUEBA DE BOTONES */
+
+.ov-btn-grow-ellipse {
+
+    background: rgba(255, 255, 255, 0.356); /* color de fondo */
+    color: #f8f8f8; /* color de fuente */
+    border: 2px solid rgba(255, 255, 255, 0.356); /* tamaño y color de borde */
+    padding: 10px 10px;
+    border-radius: 50px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    margin-right:20px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.ov-btn-grow-ellipse:hover {
+
+    color: #fff;/* color de fuente hover */
+    
+}
+
+.ov-btn-grow-ellipse::after {
+
+    content: "";
+    background: #2e2d2d; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+}
+
+.ov-btn-grow-ellipse:hover::after {
+
+    transition: all 0.9s ease-out;
+    transform: scale(1, 1);
+}
+   
+
