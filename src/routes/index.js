@@ -19,5 +19,9 @@ router.get('/contact', (req, res) => {
     res.render('contact.html');
 });
 
+router.get('/prueba', (req, res) => {
+    res.render('prueba.html');
+});
+
 //Exportando rutas
 module.exports = router;
