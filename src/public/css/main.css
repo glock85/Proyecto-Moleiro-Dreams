@@ -110,52 +110,23 @@ footer a:hover{
     color: #fff !important;
 }
 
-/* PRUEBA DE BOTONES */
+/* DETALLES ESTETICOS A LA PARTE DE PORTFOLIO */
 
-.ov-btn-grow-ellipse {
+.pagPortfolio .card-title, .pagPortfolio .card-text {
+    color: black;
+}
 
-    background: rgba(255, 255, 255, 0.356); /* color de fondo */
-    color: #f8f8f8; /* color de fuente */
-    border: 2px solid rgba(255, 255, 255, 0.356); /* tamaño y color de borde */
-    padding: 10px 10px;
-    border-radius: 50px; /* redondear bordes */
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: inline-block;
-    margin-right:20px;
-    text-decoration: none;
-    font-weight: bold;
+.pagPortfolio .accordion-button {
     
+   font-weight: bold; 
 }
 
-.ov-btn-grow-ellipse:hover {
-
-    color: #fff;/* color de fuente hover */
-    
+.pagPortfolio {
+    background: url(../img/background3.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-.ov-btn-grow-ellipse::after {
-
-    content: "";
-    background: #2e2d2d; /* color de fondo hover */
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    border-radius: 50%;
-    left: -50%;
-    right: -50%;
-    top: -150%;
-    bottom: -150%;
-    transform: scale(0, 0);
-    transition: all 0.4s ease;
-}
-
-.ov-btn-grow-ellipse:hover::after {
-
-    transition: all 0.9s ease-out;
-    transform: scale(1, 1);
-}
    
 
